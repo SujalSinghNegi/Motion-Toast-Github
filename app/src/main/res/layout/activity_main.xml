@@ -8,69 +8,142 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/SUCCES"
-        android:layout_width="wrap_content"
+        android:id="@+id/darkColor"
+        android:layout_width="136dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
-        android:text="succes"
-        app:layout_constraintEnd_toStartOf="@+id/ERROR"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/ERROR"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
-        android:text="ERROR"
-        app:layout_constraintEnd_toStartOf="@+id/warning"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/SUCCES"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/warning"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
-        android:text="warning"
+        android:text="darkColor"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/ERROR"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/noInternet"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
-        android:text="no Internet"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/delete"
-        app:layout_constraintTop_toBottomOf="@+id/warning" />
-
-    <Button
-        android:id="@+id/info"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
-        android:text="info"
-        app:layout_constraintEnd_toStartOf="@+id/delete"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/SUCCES" />
+        app:layout_constraintStart_toEndOf="@+id/darkToast"
+        app:layout_constraintTop_toBottomOf="@+id/noInternet"
+        app:layout_constraintVertical_bias="0.5" />
 
     <Button
         android:id="@+id/delete"
-        android:layout_width="wrap_content"
+        android:layout_width="136dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
         android:text="delete"
+        app:layout_constraintBottom_toTopOf="@+id/darkToast"
         app:layout_constraintEnd_toStartOf="@+id/noInternet"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/info"
-        app:layout_constraintTop_toBottomOf="@+id/ERROR" />
+        app:layout_constraintTop_toBottomOf="@+id/ERROR"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/colorToast"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:text="colorToast"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/darkToast"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/info"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/warning"
+        android:layout_width="136dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="warning"
+        app:layout_constraintBottom_toTopOf="@+id/noInternet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ERROR"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/darkToast"
+        android:layout_width="136dp"
+        android:layout_height="wrap_content"
+        android:text="darkToast"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/darkColor"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/colorToast"
+        app:layout_constraintTop_toBottomOf="@+id/delete"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/SUCCES"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="succes"
+        app:layout_constraintBottom_toTopOf="@+id/info"
+        app:layout_constraintEnd_toStartOf="@+id/ERROR"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/ERROR"
+        android:layout_width="136dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="ERROR"
+        app:layout_constraintBottom_toTopOf="@+id/delete"
+        app:layout_constraintEnd_toStartOf="@+id/warning"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/SUCCES"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/info"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="info"
+        app:layout_constraintBottom_toTopOf="@+id/colorToast"
+        app:layout_constraintEnd_toStartOf="@+id/delete"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SUCCES"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/noInternet"
+        android:layout_width="136dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="no Internet"
+        app:layout_constraintBottom_toTopOf="@+id/darkColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/delete"
+        app:layout_constraintTop_toBottomOf="@+id/warning"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toast Available on Github"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/ERROR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="324dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="484dp"
+        android:gravity="center"
+        android:text="These 3 have own 6 types for succes, error, warning...etc"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/darkToast"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.183" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -82,7 +82,33 @@ class MainActivity : AppCompatActivity() {
                 ResourcesCompat.getFont(this, www.sanju.motiontoast.R.font.helveticabold)
             )
         }
+        binding.colorToast.setOnClickListener {
+            MotionToast.createColorToast(this,"Upload Completed!",
+                "Upload Completed successfully!",
+                MotionToastStyle.SUCCESS,
+                MotionToast.GRAVITY_BOTTOM,
+                MotionToast.LONG_DURATION,
+                ResourcesCompat.getFont(this, www.sanju.motiontoast.R.font.helveticabold))
 
+        }
+        binding.darkToast.setOnClickListener {
+            MotionToast.darkToast(this,"Upload Completed!",
+                "Upload Completed successfully!",
+                MotionToastStyle.SUCCESS,
+                MotionToast.GRAVITY_BOTTOM,
+                MotionToast.LONG_DURATION,
+                ResourcesCompat.getFont(this, www.sanju.motiontoast.R.font.helveticabold))
+
+        }
+        binding.darkColor.setOnClickListener {
+            MotionToast.darkColorToast(this,"Upload Completed!",
+                "Upload Completed successfully!",
+                MotionToastStyle.SUCCESS,
+                MotionToast.GRAVITY_BOTTOM,
+                MotionToast.LONG_DURATION,
+                ResourcesCompat.getFont(this, www.sanju.motiontoast.R.font.helveticabold))
+
+        }
 
         }
 }
